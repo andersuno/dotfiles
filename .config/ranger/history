@@ -1,0 +1,16 @@
+
+help
+rename 
+rename debian2.jpg
+rename gnu1.jpg
+rename gnu2.png
+rename debian2.png
+rename debian3.jpg
+set preview_images True
+set preview_images_method urxvt 
+set preview_images_method urxvt-full
+search 
+search Down
+search wall
+search w
+search wal
