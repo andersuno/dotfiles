@@ -117,3 +117,5 @@ fi
 export PS1='\[\033[0;32m\]\u\[\033[1;33m\]@\[\033[0;31m\]\h\[\033[0m\]:\[\033[0;34m\]\w\[\033[0m\]\$ '
 export RANGER_LOAD_DEFAULT_RC=FALSE
 export EDITOR="vim"
+export SUDO_EDITOR="vim"
+export VISUAL="vim"
