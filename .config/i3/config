@@ -172,6 +172,11 @@ bar {
         status_command i3status
 }
 
+bindsym $mod+i exec --no-startup-id icecat
+bindsym $mod+KP_Add exec --no-startup-id "sudo /home/anders/Scripts/brightup.sh"
+bindsym $mod+KP_Subtract exec --no-startup-id "sudo /home/anders/Scripts/brightdown.sh"
+
+
 bindsym $mod+m exec --no-startup-id i3-sensible-terminal -name screenfetch -e ~/Scripts/screenfetch.sh
 #bindsym $mod+m exec i3-sensible-terminal -name screenfetch -e 'screenfetch; sleep 5'
 for_window [instance="screenfetch"] floating enable move position 1020 px 0 px resize set 420 250
