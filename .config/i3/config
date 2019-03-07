@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:monospace 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -30,9 +30,10 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Shift+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvt
-
+bindsym $mod+Return exec --no-startup-id "/home/anders/Scripts/terminator.sh"
+bindsym $mod+Shift+Return exec --no-startup-id urxvt
+bindsym $mod+BackSpace exec --no-startup-id st
+bindsym $mod+Shift+BackSpace exec --no-startup-idi3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -48,6 +49,7 @@ bindsym $mod+d exec dmenu_run
 #Borders
 for_window [class="^.*"] border pixel 1
 for_window [class="Firefox-esr"] border pixel 5
+for_window [title="Terminator Preferences"] floating enable
 
 #Gaps
 gaps inner 10
@@ -172,14 +174,22 @@ bar {
         status_command i3status
 }
 
-bindsym $mod+i exec --no-startup-id icecat
-bindsym $mod+KP_Add exec --no-startup-id "sudo /home/anders/Scripts/brightup.sh"
-bindsym $mod+KP_Subtract exec --no-startup-id "sudo /home/anders/Scripts/brightdown.sh"
-
+exec_always --no-startup-id compton
+exec_always --no-startup-id ~/.fehbg
 
 bindsym $mod+m exec --no-startup-id i3-sensible-terminal -name screenfetch -e ~/Scripts/screenfetch.sh
 #bindsym $mod+m exec i3-sensible-terminal -name screenfetch -e 'screenfetch; sleep 5'
 for_window [instance="screenfetch"] floating enable move position 1020 px 0 px resize set 420 250
 
-exec_always --no-startup-id compton
-exec_always --no-startup-id ~/.fehbg
+bindsym $mod+i exec --no-startup-id icecat
+bindsym $mod+o exec --no-startup-id chromium
+bindsym $mod+KP_Enter exec --no-startup-id i3lock
+bindsym $mod+KP_Add exec --no-startup-id "sudo /home/anders/Scripts/brightup.sh"
+bindsym $mod+KP_Subtract exec --no-startup-id "sudo /home/anders/Scripts/brightdown.sh"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 0 +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 0 -5%"
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 0 toggle"
+
+
+
+#bindsym $mod+  exec --no-startup-id
