@@ -11,6 +11,9 @@ set preview_images_method urxvt
 set preview_images_method urxvt-full
 search 
 search Down
-search wall
 search w
 search wal
+search wall
+search network
+search mnt
+search vir

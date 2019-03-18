@@ -15,48 +15,6 @@
     [[[window0]]]
       parent = ""
       type = Window
-  [[New Layout]]
-    [[[child0]]]
-      fullscreen = False
-      last_active_term = 5d421c9c-0319-4ba8-81b7-7376bcf0df4d
-      last_active_window = True
-      maximised = True
-      order = 0
-      parent = ""
-      position = 20:20
-      size = 1324, 705
-      title = /bin/bash
-      type = Window
-    [[[child1]]]
-      order = 0
-      parent = child0
-      position = 960
-      ratio = 0.725075528701
-      type = HPaned
-    [[[child3]]]
-      order = 1
-      parent = child1
-      position = 228
-      ratio = 0.323404255319
-      type = VPaned
-    [[[terminal2]]]
-      order = 0
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 5d421c9c-0319-4ba8-81b7-7376bcf0df4d
-    [[[terminal4]]]
-      order = 0
-      parent = child3
-      profile = default
-      type = Terminal
-      uuid = 81796ed1-f5dc-42b9-b7a8-4793b3b79430
-    [[[terminal5]]]
-      order = 1
-      parent = child3
-      profile = default
-      type = Terminal
-      uuid = e71f8463-9c1a-473f-aabd-0f594de545ee
   [[test]]
     [[[child0]]]
       fullscreen = False
@@ -78,8 +36,8 @@
     [[[child3]]]
       order = 1
       parent = child1
-      position = 228
-      ratio = 0.323404255319
+      position = 202
+      ratio = 0.286524822695
       type = VPaned
     [[[terminal2]]]
       order = 0
@@ -111,10 +69,13 @@
     exit_action = hold
     font = Mono 12
     foreground_color = "#ffffff"
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000cd:#cd00cd:#00cdcd:#faebd7:#404040:#ff0000:#00ff00:#ffff00:#0000ff:#ff00ff:#00ffff:#ffffff"
     scrollbar_position = hidden
     show_titlebar = False
   [[smallfont]]
+    cursor_blink = False
     cursor_color = "#aaaaaa"
+    cursor_shape = ibeam
     exit_action = hold
     font = Monospace 7
     scrollbar_position = hidden
