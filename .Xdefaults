@@ -5,16 +5,19 @@
 
 URxvt*depth: 32
 URxvt.scrollBar: false
-URxvt.font:         xft:bitstream Vera Sans Mono::bold:size=10:antialias=true
+URxvt.font:         xft:bitstream Vera Sans Mono:size=10:antialias=true
 URxvt.boldfont:     xft:bitstream Vera Sans Mono:bold:size=10:antialias=true
-#URxvt.font:         xft:inconsolata:pixelsize=13:antialias=true:hinting=true
-#URxvt.boldfont:     xft:inconsolata:bold:pixelsize=13:antialias=true:hinting=true
-URxvt.letterSpace:  -1
+
+ 
+#URxvt.font:         xft:Consolas:pixelsize=13:antialias=true:hinting=true
+#URxvt.boldfont:     xft:Consolas:bold:pixelsize=13:antialias=true:hinting=true
+
+URxvt.letterSpace:  0
 URxvt.lineSpace:    0
 
 ! special
 *.foreground:   #ababab
-*.background:   [95]#000000
+*.background:   [85]#000000
 *.cursorColor:  #ababab
 
 ! black

@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/home/anders/Wallpapers/gnu2.png' 

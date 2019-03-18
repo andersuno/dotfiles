@@ -144,6 +144,7 @@ fi
 
 set -o vi
 
+PATH=$PATH:/usr/sbin
 PATH=$PATH:/home/anders/.vim/bundle
 
 #Exports
