@@ -12,6 +12,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_sshhosts ]; then
+    . ~/.bash_sshhosts
+fi
+
 #Foreground colors, Normal (non-bold) is the default, so the 0; prefix is optional.
 #
 #\e[0;30m = Dark Gray
