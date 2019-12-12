@@ -141,7 +141,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
+super + {i,o}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
@@ -176,7 +176,7 @@ super + ctrl + shift + space
 
 # resize gaps
 super + alt + {8,9}
-	bspc config window_gap $((`bspc config window_gap` {-,+} 5))
+	bspc config window_gap $((`bspc config window_gap` {+,-} 5))
 super + alt + 0
 	bspc config window_gap 0
 

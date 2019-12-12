@@ -100,6 +100,62 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[bar/mybarvga]
+monitor = ${env:MONITOR:DP1}
+width = 100%
+height = 20
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+font-3 = FontAwesome:size=8
+
+modules-left = bspwm
+;modules-center = xwindow
+modules-right = wlan eth updates filesystem xbacklight pulseaudio memory cpu temperature battery date powermenu
+
+tray-position = right
+tray-padding = 0
+tray-background = ${colors.background}
+tray-detached = false
+tray-maxsize = 16
+
+
+wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%

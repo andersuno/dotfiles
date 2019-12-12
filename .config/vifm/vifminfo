@@ -9,7 +9,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -18,18 +18,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/usr/share/icons/hicolor/48x48
-	apps
-3
-d/usr/share/icons/hicolor
-	48x48
-6
-d/usr/share/icons
-	Adwaita
-1
-d/usr/share/icons/Adwaita
-	48x48
-6
 d/usr/share/icons/Adwaita/48x48
 	categories
 3
@@ -316,8 +304,20 @@ d/keybase
 	private
 1
 d/home/anders
-	Documents
-12
+	Images
+14
+d/home/anders/Images
+	..
+0
+d/home/anders
+	Images
+14
+d/home/anders/Images
+	archlogo.jpg
+1
+d/home/anders
+	.bash_logout
+22
 d
 
 # Right window history (oldest to newest):
@@ -387,6 +387,12 @@ D/home/anders/.config
 D/home/anders/.config/polybar
 	..
 0
+D/home/anders
+	tmp
+18
+D/home/anders/tmp
+	.bashrc
+4
 D
 
 # Command line history (oldest to newest):
@@ -424,9 +430,7 @@ pnetsec
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/anders/.local/share/vifm/Trash/000_linl_2017-09-18_08-27-06_10.pdf
-""/home/anders/.local/share/vifm/Trash/000_linl_2018-06-20_15-47-17_31.pdf
-""/home/anders/.local/share/vifm/Trash/000_linl_2018-09-11_10-02-19_14.pdf
+""/home/anders/.local/share/vifm/Trash/000_.bash_logout
 
 # Directory stack (oldest to newest):
 
@@ -443,6 +447,10 @@ t/home/anders/.local/share/vifm/Trash/000_linl_2018-06-20_15-47-17_31.pdf
 	/home/anders/Downloads/linl_2018-06-20_15-47-17_31.pdf
 t/home/anders/.local/share/vifm/Trash/000_linl_2018-09-11_10-02-19_14.pdf
 	/home/anders/Downloads/linl_2018-09-11_10-02-19_14.pdf
+t/home/anders/.local/share/vifm/Trash/000_.bash_profile
+	/home/anders/tmp/.bash_profile
+t/home/anders/.local/share/vifm/Trash/000_.bash_logout
+	/home/anders/tmp/.bash_logout
 
 # State:
 f
