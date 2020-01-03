@@ -74,6 +74,12 @@ set wildmenu
 :command Q q
 :command W w
 :command WQ wq
+inoremap "" ""<Left>
+inoremap '' ''<Left>
+inoremap () ()<Left>
+inoremap [] []<Left>
+inoremap {} {}<Left>
+inoremap <> <><Left>
 
 " Enable folding
 set foldmethod=indent

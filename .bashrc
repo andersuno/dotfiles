@@ -46,7 +46,8 @@ fi
 #\e[46m = Turquoise
 #\e[47m = Light Gray
 
-set -o vi
+#Vi mode
+#set -o vi
 
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/home/anders/.vim/bundle

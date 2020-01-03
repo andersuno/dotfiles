@@ -1,6 +1,7 @@
 [global_config]
 [keybindings]
   help = F11
+  layout_launcher = None
 [layouts]
   [[default]]
     [[[child1]]]
