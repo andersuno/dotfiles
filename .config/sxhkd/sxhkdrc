@@ -58,6 +58,10 @@ super + shift + p
 super + KP_Enter
 	i3lock-fancy
 
+#Screenoutput
+XF86Display
+	$HOME/Scripts/screenoutput.sh
+
 #Volume
 XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume 0 {+,-}5%
@@ -65,12 +69,16 @@ XF86Audio{Raise,Lower}Volume
 XF86AudioMute
 	pactl set-sink-mute 0 toggle
 
-#Brightness
-XF86MonBrightness{Down,Up}
-	sudo /home/anders/Scripts/bright{down,up}.sh
+#Mic
+XF86AudioMicMute
+	pactl set-source-mute 1 toggle
 
-super + KP_{Subtract,Add}
-	sudo /home/anders/Scripts/bright{down,up}.sh
+#Brightness
+#XF86MonBrightness{Down,Up}
+#	sudo /home/anders/Scripts/bright{down,up}.sh
+#
+#super + KP_{Subtract,Add}
+#	sudo /home/anders/Scripts/bright{down,up}.sh
 
 # program launcher
 super + d

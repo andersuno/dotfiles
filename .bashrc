@@ -5,16 +5,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.bash_sshhosts ]; then
-    . ~/.bash_sshhosts
-fi
 
 #Foreground colors, Normal (non-bold) is the default, so the 0; prefix is optional.
 #
@@ -49,9 +45,6 @@ fi
 #Vi mode
 #set -o vi
 
-PATH=$PATH:/usr/sbin
-PATH=$PATH:/home/anders/.vim/bundle
-PATH=$PATH:/usr/lib
 
 #Exports
 #export PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
@@ -60,10 +53,5 @@ PATH=$PATH:/usr/lib
 export PS1="\[\e[1;32m\]┌──[\[\e[0;36m\]\u\[\e[0;32m\]@\[\e[0;31m\]\h\[\e[1;32m\]]─[\[\e[0;34m\]\w\[\e[1;32m\]]\n\[\e[1;32m\]└──╼ \$\[\e[0;0m\] "
 #export PS1="\[\e[1;32m\][\[\e[0;36m\]\u\[\e[0;32m\]@\[\e[0;31m\]\h\[\e[1;32m\]]─[\[\e[0;34m\]\w\[\e[1;32m\]]\$\[\e[0;0m\] "
 
-export RANGER_LOAD_DEFAULT_RC=FALSE
-export EDITOR="vim"
-export SUDO_EDITOR="vim"
-export VISUAL="vim"
-export XDG_CONFIG_HOME=$HOME/.config
 
 ~/Scripts/pfetch
