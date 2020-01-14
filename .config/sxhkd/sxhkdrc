@@ -10,9 +10,6 @@
 #XF86LaunchB
 #	xdotool selectwindow | xsel -bi
 #
-#super + {h,j,k,l}
-#	bspc node -f {west,south,north,east}
-#
 #super + alt + {0-9}
 #	mpc -q seek {0-9}0%
 #
@@ -21,8 +18,6 @@
 #
 #super + {_,shift + }{h,j,k,l}
 #	bspc node -{f,s} {west,south,north,east}
-#
-#
 #
 #super + alt + control + {h,j,k,l} ; {0-9}
 #	bspc node @{west,south,north,east} -r 0.{0-9}
@@ -49,10 +44,6 @@ super + Return
 # terminal emulator
 super + shift + Return
 	st
-
-#Keepass menu
-super + shift + p
-	kpmenu -d /home/anders/.kp/Database.kdbx
 
 #i3Lock
 super + KP_Enter
@@ -128,13 +119,13 @@ super + ctrl + {m,x,y,z}
 # focus/swap
 #
 
-# focus the node in the given direction
+# focus or swap the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+#super + {p,b,comma,period}
+#	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
 super + {_,shift + }c
