@@ -1,5 +1,5 @@
 alias ls='ls --color=auto'
-alias ll='ls -la'
+alias ll='ls -lah'
 alias lsl='ls -l'
 alias pm='sudo pacman'
 alias reb='sudo reboot'
