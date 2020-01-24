@@ -19,15 +19,9 @@ set wildmenu
 set wildmode=list:longest,full
 "set cursorline
 "set ruler
-<<<<<<< HEAD
 :command-bang Q q
 :command-bang W w
 :command-bang WQ wq
-=======
-:command Q q
-:command W w
-:command WQ wq
->>>>>>> f6d16600147178ccd4002c42a666a22dca7047ee
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap () ()<Left>
@@ -35,12 +29,9 @@ inoremap [] []<Left>
 inoremap {} {}<Left>
 inoremap <> <><Left>
 
-<<<<<<< HEAD
 " show whitespace
 set list
 
-=======
->>>>>>> f6d16600147178ccd4002c42a666a22dca7047ee
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
