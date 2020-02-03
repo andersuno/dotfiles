@@ -39,11 +39,11 @@ super + s
 
 # terminal emulator
 super + Return
-	terminator
+	alacritty
 
 # terminal emulator
 super + shift + Return
-	st
+	terminator
 
 #i3Lock
 super + KP_Enter

@@ -17,8 +17,11 @@ set number
 set smartcase
 set wildmenu
 set wildmode=list:longest,full
+set scrolloff=2
 "set cursorline
 "set ruler
+"set termguicolors
+:colorscheme elflord
 :command-bang Q q
 :command-bang W w
 :command-bang WQ wq
