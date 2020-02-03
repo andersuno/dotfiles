@@ -81,7 +81,7 @@ font-4 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;2
 
 modules-left = bspwm
 ;modules-center = xwindow
-modules-right = wlan eth updates2 xbacklight pulseaudio cpu temperature battery date powermenu
+modules-right = wlan eth updates2 filesystem xbacklight pulseaudio cpu temperature battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -336,7 +336,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = ACAD
-full-at = 100
+full-at = 89
 
 ;<animation-charging>
 

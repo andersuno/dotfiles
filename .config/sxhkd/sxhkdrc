@@ -30,8 +30,8 @@
 #
 
 #Program launcher
-super + @p ; {b,c,e,p,t}
-	{sudo timeshift-launcher,chromium,geany,keepassxc,terminator}
+super + @p ; {b,c,e,p,t,l}
+	{sudo timeshift-launcher,brave,geany,keepassxc,terminator,lbry}
 
 #Script launcher
 super + s

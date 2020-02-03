@@ -19,7 +19,8 @@ bspc config gapless_monocle      true
 
 bspc desktop II -l monocle
 
-bspc rule -a Chromium desktop='^2' follow=on
+#bspc rule -a Chromium desktop='^2' follow=on
+bspc rule -a Brave-browser desktop='^2' follow=on
 bspc rule -a Timeshift-gtk state=floating
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
