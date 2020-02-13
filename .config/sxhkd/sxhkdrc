@@ -81,7 +81,8 @@ super + Escape
 
 #Lock screen
 super + Delete
-	sudo $HOME/Suckless/slock/slock
+	betterlockscreen -l blur
+	#sudo $HOME/Suckless/slock/slock
 
 #
 # bspwm hotkeys

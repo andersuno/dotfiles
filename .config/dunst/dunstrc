@@ -146,7 +146,8 @@ startup_notification = false
 dmenu = /usr/bin/dmenu -p dunst:
 
 # Browser for opening urls in context menu.
-browser = /usr/bin/firefox -new-tab
+browser = /usr/bin/brave -new-tab
+#browser = /usr/bin/firefox -new-tab
 
 # Align icons left/right/off
 icon_position = right
@@ -157,6 +158,19 @@ icon_path = /usr/share/icons/Adwaita/48x48/mimetypes/:/usr/share/icons/Adwaita/4
 
 frame_width = 3
 frame_color = "#8EC07C"
+
+### mouse
+
+# Defines action of mouse event
+# Possible values are:
+# * none: Don't do anything.
+# * do_action: If the notification has exactly one action, or one is marked as default,
+#              invoke it. If there are multiple and no default, open the context menu.
+# * close_current: Close current notification.
+# * close_all: Close all notifications.
+mouse_left_click = do_action
+mouse_middle_click = close_all
+mouse_right_click = close_current
 
 [shortcuts]
 
