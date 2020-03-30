@@ -21,7 +21,7 @@ set scrolloff=2
 "set cursorline
 "set ruler
 "set termguicolors
-:colorscheme elflord
+colorscheme elflord
 :command-bang Q q
 :command-bang W w
 :command-bang WQ wq
