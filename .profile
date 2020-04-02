@@ -5,6 +5,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export EDITOR="vim"
 export SUDO_EDITOR="vim"
 export VISUAL="vim"
+export TERM="xterm-256color"
 export TERMINAL="alacritty"
 export BROWSER="Chromium"
 export READER="zathura"
