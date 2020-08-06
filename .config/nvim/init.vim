@@ -44,20 +44,30 @@ nnoremap <space> za
 
 " Python PEP 8
 "au BufNewFile,BufRead *.py
-au Filetype python
-    \setlocal tabstop=4
-    \setlocal softtabstop=4
-    \setlocal shiftwidth=4
-    \setlocal textwidth=79
-    \setlocal expandtab
-    \setlocal autoindent
-    \setlocal fileformat=unix
+au Filetype python setlocal
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ textwidth=79
+    \ expandtab
+    \ autoindent
+    \ fileformat=unix
+
+" Yaml
+au Filetype yaml setlocal
+    \ tabstop=2
+    \ softtabstop=2
+    \ shiftwidth=2
+    \ textwidth=79
+    \ expandtab
+    \ autoindent
+    \ fileformat=unix
 
 " Other filespecific settings
-au BufNewFile,BufRead *.js, *.html, *.css
-    \set tabstop=2
-    \set softtabstop=2
-    \set shiftwidth=2
+au BufNewFile,BufRead *.js, *.html, *.css setlocal
+    \ tabstop=2
+    \ softtabstop=2
+    \ shiftwidth=2
 
 " Mark bad whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
