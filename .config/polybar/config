@@ -337,8 +337,9 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/battery]
 type = internal/battery
 battery = BAT0
-adapter = ACAD
-full-at = 90
+adapter = AC
+;adapter = ACAD
+full-at = 93
 
 ;<animation-charging>
 
@@ -363,7 +364,7 @@ ramp-capacity-5 = 
 ramp-capacity-6 = 
 ramp-capacity-7 = 
 ramp-capacity-8 = 
-ramp-capacity-9 = 
+ramp-capacity-9 = 
 ramp-capacity-0-foreground = ${colors.secondary}
 ramp-capacity-1-foreground = ${colors.secondary}
 ramp-capacity-2-foreground = ${colors.secondary}

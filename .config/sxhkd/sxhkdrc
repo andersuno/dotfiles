@@ -65,7 +65,8 @@ XF86AudioMicMute
 	pactl set-source-mute 1 toggle
 
 #Brightness
-#XF86MonBrightness{Down,Up}
+XF86MonBrightness{Down,Up}
+	xbacklight -{dec,inc} 5
 #	sudo /home/anders/Scripts/bright{down,up}.sh
 #
 #super + KP_{Subtract,Add}
